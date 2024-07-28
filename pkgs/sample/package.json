@@ -1,0 +1,13 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "arkb": "^1.1.61"
+  },
+  "scripts": {
+    "fileUpload": "arkb deploy hello.txt -w keyfile.json"
+  }
+}

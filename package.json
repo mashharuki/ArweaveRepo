@@ -1,0 +1,16 @@
+{
+  "name": "ArweaveRepo",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "repository": "https://github.com/mashharuki/ArweaveRepo.git",
+  "author": "Haruki Kondo",
+  "license": "MIT",
+  "workspaces": [
+    "pkgs/*"
+  ],
+  "scripts": {
+    "sample": "yarn workspace sample",
+    "myapp": "yarn workspace myapp"
+  }
+}
