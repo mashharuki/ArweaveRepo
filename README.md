@@ -66,6 +66,24 @@ Arweave を学習するためのリポジトリです。
 
     [https://arweave.net/-64xbGEuURj9p66TORn2yKWJJey9aj3fm_QqJlmTEPA](https://arweave.net/-64xbGEuURj9p66TORn2yKWJJey9aj3fm_QqJlmTEPA)にアクセスすると SPA のアプリケーションがデプロイされている。
 
+- `aos`を使ってメッセージを送ってみる方法
+
+  ローカルで起動する。
+
+  ```bash
+  aos --wallet ./pkgs/sample/keyfile.json
+  ```
+
+  ```bash
+  default@aos-0.2.1[Inbox:1]> Morpheus = "ajrGnUq9x9-K1TY1MSiKwNWhNTbq7-IdtFa33T59b7s"
+  undefined
+  default@aos-0.2.1[Inbox:1]> Send({ Target = Morpheus, Data = "Morpheus?" })
+  Message added to outbox.
+  New Message From ajr...b7s: Data = I am here. You are f
+  default@aos-0.2.1[Inbox:2]> Inbox[#Inbox].Data
+  I am here. You are finally awake. Are you ready to see how far the rabbit hole goes?
+  ```
+
 ### 参考文献
 
 1. [Arweave / AO 開発入門](https://github.com/arweavejp/.github/blob/master/docs/quick-start.md)
